@@ -5,3 +5,8 @@ Rails.application.routes.draw do
 
 
 end
+
+
+devise_scope :user do
+  get 'login', to: 'devise/sessions#new'
+end
